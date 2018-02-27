@@ -10,6 +10,7 @@
 		3318C057204596710088777B /* OpenUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318C04D204596710088777B /* OpenUp.framework */; };
 		3318C05C204596710088777B /* OpenUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3318C05B204596710088777B /* OpenUpTests.swift */; };
 		3318C05E204596710088777B /* OpenUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3318C050204596710088777B /* OpenUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3318C06A2045A0920088777B /* OpenUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3318C0692045A0920088777B /* OpenUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3318C056204596710088777B /* OpenUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318C05B204596710088777B /* OpenUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUpTests.swift; sourceTree = "<group>"; };
 		3318C05D204596710088777B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3318C0692045A0920088777B /* OpenUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				3318C050204596710088777B /* OpenUp.h */,
 				3318C051204596710088777B /* Info.plist */,
+				3318C0692045A0920088777B /* OpenUp.swift */,
 			);
 			path = OpenUp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					3318C04C204596710088777B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					3318C055204596710088777B = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3318C06A2045A0920088777B /* OpenUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		3318C062204596710088777B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.daman.OpenUp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		3318C063204596710088777B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		3318C065204596710088777B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9893EYU4C6;
 				INFOPLIST_FILE = OpenUpTests/Info.plist;
@@ -390,6 +399,7 @@
 		3318C066204596710088777B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9893EYU4C6;
 				INFOPLIST_FILE = OpenUpTests/Info.plist;
